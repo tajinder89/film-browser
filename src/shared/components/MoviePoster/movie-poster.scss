@@ -1,0 +1,20 @@
+@use '../../../styles/scss/mixins' as *;
+@use '../../../styles/scss/variables' as *;
+
+.movie-poster {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  background: var(--color-gray-light);
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}

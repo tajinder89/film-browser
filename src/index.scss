@@ -1,0 +1,32 @@
+@use './styles/global.scss' as *;
+@use './styles/header.scss' as *;
+@use './features/MovieCarousel/styles/movie-carousel.scss' as *;
+@use './features/MovieCarousel/styles/carousel.scss' as *;
+@use './features/MovieCarousel/styles/movie-card.scss' as *;
+@use './features/MovieDetail/styles/movie-detail.scss' as *;
+@use './features/MovieDetail/styles/carousel-themes.scss' as *;
+@use './shared/components/MoviePoster/movie-poster.scss' as *;
+@use './shared/components/LoadingSpinner/loading-spinner.scss' as *;
+@use './shared/components/ErrorMessage/error-message.scss' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--font-base);
+  font-weight: var(--font-weight-normal);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-base);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.6;
+  color: var(--color-black);
+  background: var(--color-white);
+}
