@@ -1,0 +1,1 @@
+export { prefetchRouteData } from './prefetch'

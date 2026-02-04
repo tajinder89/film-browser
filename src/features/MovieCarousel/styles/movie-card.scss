@@ -1,0 +1,49 @@
+@use '../../../styles/scss/mixins' as *;
+@use '../../../styles/scss/variables' as *;
+
+.movie-card {
+  min-width: 200px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: var(--transition);
+  background: var(--color-white);
+  border: 1px solid var(--color-gray);
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-gray-dark);
+  }
+}
+
+.movie-info {
+  padding: 10px;
+  background: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: auto;
+  max-height: 60px;
+  overflow: hidden;
+}
+
+.movie-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+
+  .stars {
+    font-size: 0.95rem;
+    color: #ffc107;
+  }
+
+  .rating-value {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-black);
+  }
+}

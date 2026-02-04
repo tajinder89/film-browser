@@ -1,0 +1,127 @@
+@use '../../../styles/scss/mixins' as *;
+@use '../../../styles/scss/variables' as *;
+
+[data-carousel-source='toprated'] {
+  .movie-title {
+    color: #1e40af;
+    font-weight: var(--font-weight-bold);
+  }
+
+  .favorite-btn {
+    background: #1e40af;
+    color: var(--color-white);
+    border: 1px solid #1e40af;
+
+    &:hover {
+      background: #1e3a8a;
+      border-color: #1e3a8a;
+      color: var(--color-white);
+    }
+
+    &.favorited {
+      background: #1e40af;
+      border-color: #1e40af;
+      color: var(--color-white);
+
+      &:hover {
+        background: #1e3a8a;
+        color: var(--color-white);
+      }
+    }
+  }
+
+  .genre-tag {
+    background: #eff6ff;
+    border: 1px solid #1e40af;
+    color: #1e40af;
+
+    &:hover {
+      background: #dbeafe;
+      border-color: #1e40af;
+    }
+  }
+}
+
+[data-carousel-source='upcoming'] {
+  .movie-title {
+    color: #ea580c;
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .favorite-btn {
+    background: #ea580c;
+    color: var(--color-white);
+    border: 1px solid #ea580c;
+
+    &:hover {
+      background: #c2410c;
+      border-color: #c2410c;
+      color: var(--color-white);
+    }
+
+    &.favorited {
+      background: #ea580c;
+      border-color: #ea580c;
+      color: var(--color-white);
+
+      &:hover {
+        background: #c2410c;
+        color: var(--color-white);
+      }
+    }
+  }
+
+  .genre-tag {
+    background: #fff7ed;
+    border: 1px solid #ea580c;
+    color: #ea580c;
+
+    &:hover {
+      background: #fed7aa;
+      border-color: #ea580c;
+    }
+  }
+}
+
+[data-carousel-source='nowplaying'] {
+  .movie-title {
+    color: #059669;
+    font-weight: var(--font-weight-bold);
+  }
+
+  .favorite-btn {
+    background: #059669;
+    color: var(--color-white);
+    border: 1px solid #059669;
+
+    &:hover {
+      background: #047857;
+      border-color: #047857;
+      color: var(--color-white);
+    }
+
+    &.favorited {
+      background: #059669;
+      border-color: #059669;
+      color: var(--color-white);
+
+      &:hover {
+        background: #047857;
+        color: var(--color-white);
+      }
+    }
+  }
+
+  .genre-tag {
+    background: #ecfdf5;
+    border: 1px solid #059669;
+    color: #059669;
+
+    &:hover {
+      background: #a7f3d0;
+      border-color: #059669;
+    }
+  }
+}
